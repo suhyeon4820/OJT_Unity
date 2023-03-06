@@ -978,6 +978,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66408247, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 66408247, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 66408247, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 927215359, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44855818
+      objectReference: {fileID: 0}
+    - target: {fileID: 927215359, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.93950874
+      objectReference: {fileID: 0}
+    - target: {fileID: 927215359, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
     - target: {fileID: 167750401773591678, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -989,6 +1013,10 @@ PrefabInstance:
     - target: {fileID: 167750401773591678, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103455903423989252, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8753007782786484532, guid: 9c3d2f46bba79e0489c794eeb79102e6, type: 3}
       propertyPath: m_RootOrder
