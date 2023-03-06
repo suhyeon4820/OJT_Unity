@@ -60,6 +60,8 @@
     <Compile Include="Assets\02_Scripts\CameraFollow.cs" />
     <Compile Include="Assets\02_Scripts\Billboard.cs" />
     <Compile Include="Assets\08_ETC\InputSystem.cs" />
+    <Compile Include="Assets\PetRandomAnim.cs" />
+    <Compile Include="Assets\02_Scripts\Pet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

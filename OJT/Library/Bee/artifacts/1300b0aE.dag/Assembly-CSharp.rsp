@@ -336,7 +336,9 @@
 "Assets/02_Scripts/Billboard.cs"
 "Assets/02_Scripts/CameraFollow.cs"
 "Assets/02_Scripts/Character/PlayerController.cs"
+"Assets/02_Scripts/Pet.cs"
 "Assets/08_ETC/InputSystem.cs"
+"Assets/PetRandomAnim.cs"
 -langversion:9.0
 
 /deterministic
