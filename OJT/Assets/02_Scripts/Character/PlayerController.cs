@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     private InputSystem playerInput;
     private CharacterController controller;
-    private Vector3 playerVelocity;
-    //private bool groundedPlayer;
+
     [SerializeField] private float playerSpeed = 5.0f;
+    [SerializeField] Transform spawnWeaponTransform;
 
     private Animator animator;
-    //[SerializeField] private float gravityValue = -9.81f;
+    PoolingManager poolingManager;
 
     private void Awake()
     {
@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
 
         animator = transform.GetChild(0).GetComponent<Animator>();
+        poolingManager = GetComponent<PoolingManager>();
     }
 
     private void OnEnable()
@@ -36,6 +37,13 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMove();
         PlayerAttack();
+        ReturnPlayerTransform();
+    }
+
+    public Vector3 ReturnPlayerTransform()
+    {
+        Vector3 playerTransform = transform.position;
+        return playerTransform;
     }
 
     void PlayerMove()
@@ -60,9 +68,15 @@ public class PlayerController : MonoBehaviour
     {
         if(playerInput.Player.Attack.triggered)
         {
-            //
+            // pooling
+            StartCoroutine(Fire());
             animator.SetTrigger("Attack");
         }
         
+    }
+    IEnumerator Fire()
+    {
+        yield return new WaitForSeconds(0.5f);
+        poolingManager.PoolingArrow();
     }
 }

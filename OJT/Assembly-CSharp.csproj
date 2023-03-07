@@ -61,7 +61,12 @@
     <Compile Include="Assets\02_Scripts\Billboard.cs" />
     <Compile Include="Assets\08_ETC\InputSystem.cs" />
     <Compile Include="Assets\PetRandomAnim.cs" />
-    <Compile Include="Assets\02_Scripts\Pet.cs" />
+    <Compile Include="Assets\02_Scripts\PetMove.cs" />
+    <Compile Include="Assets\02_Scripts\Room\SceneManager.cs" />
+    <Compile Include="Assets\02_Scripts\PoolingManager.cs" />
+    <Compile Include="Assets\02_Scripts\WeaponArrow.cs" />
+    <Compile Include="Assets\02_Scripts\MainUI.cs" />
+    <Compile Include="Assets\02_Scripts\Character\PlayerSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

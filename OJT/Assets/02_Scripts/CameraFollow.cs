@@ -5,10 +5,16 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Vector3 cameraOffSet;
-    [SerializeField] private Transform target;
+    private Transform target;
     [SerializeField] private float smoothTime;
     private Vector3 currentVelocity = Vector3.zero;
 
+    public void SetTarget(Transform targetTransform)
+    {
+        target = targetTransform;
+    }
+
+    // 1
     //private void Awake()
     //{
     //    cameraOffSet = transform.position - target.position;
@@ -20,10 +26,15 @@ public class CameraFollow : MonoBehaviour
     //    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothTime);
     //}
 
-    private void FixedUpdate()
+
+
+
+    // 2
+    private void LateUpdate()
     {
         Vector3 desiredPosition = target.position + cameraOffSet;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothTime);
         transform.position = smoothedPosition;
+        transform.LookAt(target);
     }
 }
